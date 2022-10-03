@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+html ::-webkit-scrollbar,body ::-webkit-scrollbar {
+    width: 5px
+}
+
+html ::-webkit-scrollbar-thumb:vertical,body ::-webkit-scrollbar-thumb:vertical {
+    background-color: #DC866B
+}
+header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+header button{
+    border: transparent;
+    background-color: transparent;
+}
+header .social img{
+    width: 16px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+header .social button{
+    margin-right: 7px;
+}
+header .info img{
+    width: 16px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+header .info button{
+    margin-right: 7px;
+}
+header .info .login{
+    font-family: 'roboto';
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 16%);
+    background-color: #FFEFFF;
+    margin-top: 0px;
+    margin-left: -17%;
+    width: 25%;
+    height: 21pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opc{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-align: center;
+}
+.opc input{
+    border-radius: 3px;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header .info .login h1{
+    font-family: 'Poppins', sans-serif;
+    color: #DC866B;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.title-form{
+    display: flex;
+    gap: 18px;
+}
+.close{
+    position: absolute;
+    margin-top: 72%;
+    margin-left: 63%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.car{
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    background-color: #DC866B;
+    height: 100%;
+    width: 30%;
+}
+.car img{
+    position: absolute;
+    top: 22%;
+    left: 16px;
+}
+.car h1{
+    font-size: 18px;
+    position: relative;
+    z-index: 99;
+    top: 20.4%;
+    left: 40px;
+}
+.ham{
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    background-color: #DC866B;
+    height: 100%;
+    width: 30%;
+}
+.ham img{
+    width: 9%;
+    position: absolute;
+    z-index: 99;
+    top: 5%;
+    left: 7%;
+    
+}
+header .info .login input{
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid;
+}
+.ham .menuham{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 27px;
+    cursor: pointer;
+}
+header .info .login label{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15%;
+    font-weight: 300;
+    font-size: 13px;
+}
+header .center{
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    justify-content: center;
+    cursor: pointer;
+}
+header .center h1:hover{
+    color: #DC866B;
+}
+header .logo{
+    width: 15%;
+    position: relative;
+    bottom: 1pc;
+}
+section .bannerfull{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.bannermobile{
+    display: none;
+}
+section .banner-circle{
+    position: relative;
+    z-index: 99;
+    bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+section .banner-circle .circle1, .circle2, .circle3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: solid 1px #DC866B;
+    cursor: pointer;
+}
+main .filtro{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #DC866B;
+}
+main .btnfiltro{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+main .btnfiltro button{
+    border-radius: 2px;
+    margin-top: 12px;
+    color: black;
+    font-weight: 400;
+    border: #DC866B solid 0.5px;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+main .btnfiltro button:hover{
+    color:  #DC866B;
+    border:  #DC866B solid 1px;
+}
+.titlemain{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #DC866B;
+}
+.produtos{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 3%;
+    flex-direction: row;
+}
+.produtos2{
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    margin-top: 3%;
+    flex-direction: row;
+}
+
+.container, .container1, .container2, .container3, .container4, .container5{
+    background: #fff;
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    flex-direction: column;
+    color: black;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.container:hover, .container1:hover, .container2:hover, .container3:hover, .container4:hover, .container5:hover{
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.container img{
+    width: 52%;
+}
+.container1 img{
+    width: 52%;
+}
+.container2 img{
+    width: 52%;
+}
+.container3 img{
+    width: 52%;
+}
+.container4 img{
+    width: 52%;
+}
+.container5{
+    width: 74.6pc;
+}
+.container5 img{
+    width: 52%;
+}
+footer{
+    margin-top: 32px;
+    width: auto;
+    height: 13pc;
+    color: #FFE1FF;
+    background-color: #DC866B;
+    font-family: 'Roboto';
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+footer p{
+    font-family: 'Open Sans', sans-serif;
+}
+.menuham{
+    display: none;
+}
+.compar{
+    width: 160px;
+    height: 2pc;
+    cursor: pointer;
+    border: #DC866B solid 1px;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+.compar:hover{
+    background-color: #DC866B;
+    color: #FFEFFF;
+    border: #FFEFFF;
+}
+.minimenu{
+    display: none;
+}
+@media (max-width: 1209px){
+    
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .menuham{
+        display: none;
+    }
+    header .social button{
+        position: relative;
+        left: 57%;
+    }
+    header .info button{
+        position: relative;
+        left: -57%;
+    }
+    .center{
+        width: 70%;
+    }
+    section .banner-circle{
+    position: relative;
+    z-index: 99;
+    bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+    section .banner-circle .circle1, .circle2, .circle3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: solid 1px #DC866B;
+    cursor: pointer;
+}
+.container, .container1, .container2, .container3, .container4, .container5{
+    background: #fff;
+    width: 20%;
+    font-size: 9px;
+
+}
+.compar{
+    width: 130px;
+    height: 2pc;
+}
+
+}
+@media (max-width: 723px){
+    .container, .container1, .container2, .container3, .container4, .container5{
+        background: #fff;
+        width: 17%;
+        font-size: 7px;
+    }
+    .compar{
+        width: 100px;
+        height: 1pc;
+        font-size: 8px;
+        text-align: center;
+    }
+}
+@media (max-width: 577px){
+    .container, .container1, .container2, .container3, .container4, .container5{
+        background: #fff;
+        width: 90%;
+        height: 100%;
+        font-size: 17px;
+    }
+    .produtos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2%;
+        margin-top: 3%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .produtos img{
+        width: 47%;
+    }
+    .produtos2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2%;
+        margin-top: 3%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .produtos2 img{
+        width: 47%;
+    }
+    footer{
+        width: auto;
+        height: 13pc;
+        color: #FFE1FF;
+        background-color: #DC866B;
+        font-family: 'Roboto';
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 460%;
+    }
+    .compar{
+        width: 100px;
+        height: 1pc;
+        font-size: 8px;
+        text-align: center;
+    }
+}
+@media (max-width: 723px) and (min-width: 509px){
+    .social, .info{
+        display: none;
+    }
+    header h1{
+        display: none;
+    }
+    header img{
+        margin-top: 22px;
+        margin-right: 120%;
+    }
+    .compar{
+        width: 107px;
+        height: 2pc;
+    }
+    .minimenu{
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        width: 4%;
+        top: 12px;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    .produtos{
+        gap: 3%;
+    }
+    .produtos2{
+        gap: 3%;
+    }
+}
+@media (max-width: 509px){
+    .compar{
+        width: 160px;
+        height: 2pc;
+    }
+    .minimenu{
+        margin-top: 12px;
+        left: 65%;
+        position: absolute;
+    }
+    .social, .info{
+        display: none;
+    }
+    header h1{
+        display: none;
+    }
+    header img{
+        margin-top: 22px;
+        margin-right: 120%;
+    }
+    .minimenu{
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        width: 4%;
+        top: 12px;
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    section{
+        display: none;
+    }
+    .bannermobile{
+        display: flex;
+        width: 120%;
+    }
+    .ham{
+        display: flex;
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        right: 0;
+        background-color: #DC866B;
+        height: 100%;
+        width: 100%;
+    }
+    .ham img{
+        width: 9%;
+        position: absolute;
+        z-index: 99;
+        top: 5%;
+        right: 7%;
+        
+    }
+    .ham ul{
+        margin-left: 28%;
+    }
+    ul li{
+        display: flex;
+        gap: 4%;
+    }
+    main{
+        height: 0%;
+        align-items: center;
+        text-align: center;
+    }
+    footer{
+        width: 120%;
+        margin-top: 20%;
+    }
+    .banner-cicle{
+        position: relative;
+        z-index: 99;
+        top: 40%;
+    }
+    .produtos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 62%;
+        margin-top: 3%;
+    }
+    .produtos2{
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        margin-top: 3%;
+
+    }
+    main{
+        margin-left: 18%;
+        height: -800px;
+    }
+}
+
+@media (max-width: 422px){
+    footer{
+        width: 162%;
+        margin-top: 200%;
+    }
+    .bannermobile{
+        display: flex;
+        width: 162%;
+    }
+    .minimenu{
+        position: absolute;
+        right: -130%;
+        margin: auto;
+        top: 3%;
+    }
+    .produtos, .produtos2{
+        margin-left: 50%;
+    }
+    .filtro{
+        margin-left: 40%;
+    }
+    .titlemain{
+        margin-left: 40%;
+    }
+    .btnfiltro{
+        margin-left: 52%;
+    }
+    .container, .container1, .container2, .container3, .container4, .container5{
+        background: #fff;
+        width: 400%;
+        height: 100%;
+        font-size: 17px;
+    }
+}
+@media (max-width: 311px){
+    .btnfiltro{
+        display: block;
+    }
+}
+@media (max-width: 280px){
+    footer{
+        width: 192%;
+        margin-top: 200%;
+    }
+    .minimenu{
+        position: absolute;
+        right: -190%;
+        margin: auto;
+        top: 3%;
+    }
+    .produtos, .produtos2{
+        margin-left: 80%;
+    }
+    .filtro{
+        margin-left: 50%;
+    }
+    .titlemain{
+        margin-left: 59%;
+    }
+    .btnfiltro{
+        margin-left: 80%;
+    }
+    .container, .container1, .container2, .container3, .container4, .container5{
+        background: #fff;
+        width: 700%;
+        height: 100%;
+        font-size: 17px;
+    }
+}
